@@ -70,15 +70,15 @@ Open `Seattle_Collisions_Main.ipynb` in Jupyter and run all cells. This will:
 
 ## How It Works
 
-**1. Data cleaning & severity scoring**
+**1. Data cleaning & severity scoring:**
 Rows missing an intersection ID (`INTKEY`) are dropped, since collisions can't be attributed to a specific intersection without one. Each remaining collision is assigned a `severity_score`:
 - Property damage only → `1`
 - Otherwise → weighted sum of fatalities (×10), serious injuries (×5), and injuries (×2)
 
-**2. Optimization model**
+**2. Optimization model:**
 For each intersection, a binary decision variable is created (`1` = selected, `0` = not selected). The model maximizes the total severity score across selected intersections, subject to a constraint capping the number of intersections that can be chosen — mirroring a real-world limited budget or capacity constraint.
 
-**3. Visualization**
+**3. Visualization:**
 Selected intersections' coordinates (originally in Washington State Plane North, feet) are converted to standard latitude/longitude and plotted on an interactive Folium map, with popups displaying each intersection's total collision count and severity score.
 
 ## Example Output
