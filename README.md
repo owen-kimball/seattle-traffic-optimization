@@ -37,7 +37,8 @@ seattle-traffic-optimization/
 ├── notebooks/
 │   └── Seattle_Collisions_Main.ipynb       # Main analysis and optimization pipeline
 ├── sql/
-│   └── 
+│   └── traffic_analysis.sql
+│   └── severity_of_collisions.sql
 ├── most_severe_collisions_map.html         # Generated interactive map (output)
 ├── requirements.txt
 ├── .gitignore
