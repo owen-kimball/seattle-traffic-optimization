@@ -36,6 +36,8 @@ seattle-traffic-optimization/
 │   └── SDOT_Collisions_All_Years.csv_1.xz  # Compressed source dataset
 ├── notebooks/
 │   └── Seattle_Collisions_Main.ipynb       # Main analysis and optimization pipeline
+├── sql/
+│   └── 
 ├── most_severe_collisions_map.html         # Generated interactive map (output)
 ├── requirements.txt
 ├── .gitignore
