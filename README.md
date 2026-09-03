@@ -11,7 +11,7 @@ Rather than ranking intersections by raw collision count alone, the project engi
 ## Features
 
 - **Custom severity scoring** — collisions are weighted by outcome (fatality, serious injury, injury, property damage only) rather than treated as equally severe
-- **Linear programming optimization** — uses [PuLP](https://coin-or.github.io/pulp/) to solve a binary knapsack-style problem: select the *N* intersections that maximize total severity score
+- **Linear programming optimization** — uses [PuLP](https://coin-or.github.io/pulp/) to mathematically select the best *N* intersections out of all candidates, choosing the combination that maximizes total severity score
 - **Configurable scope** — the number of intersections considered (`num_of_intersections_considered`) can be adjusted, with automatic fallback to a sane default if an invalid value is provided
 - **SQL integration** — collision data is loaded into SQLite databases for structured querying and downstream use
 - **Interactive mapping** — selected intersections are plotted on a Folium map with popups showing collision counts and severity scores, after converting from Washington State Plane coordinates to standard latitude/longitude
@@ -33,8 +33,9 @@ Rather than ranking intersections by raw collision count alone, the project engi
 \```
 seattle-traffic-optimization/
 ├── data/
-│   └── SDOT_Collisions_All_Years.csv.xz   # Compressed source dataset
-├── Seattle_Collisions_Main.ipynb                          # Main analysis and optimization pipeline
+│   └── SDOT_Collisions_All_Years.csv_1.xz   # Compressed source dataset
+├── notebooks/
+│   └── Seattle_Collisions_Main.ipynb                          # Main analysis and optimization pipeline
 ├── most_severe_collisions_map.html         # Generated interactive map (output)
 ├── requirements.txt
 ├── .gitignore
