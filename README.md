@@ -48,18 +48,18 @@ Collision records are sourced from the [Seattle Department of Transportation (SD
 
 ## Setup
 
-**1. Clone the repository**
+**1. Clone the repository:**
 ```bash
 git clone https://github.com/owen-kimball/seattle-traffic-optimization.git
 cd seattle-traffic-optimization
 ```
 
-**2. Install dependencies**
+**2. Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**3. Run the notebook**
+**3. Run the notebook:**
 Open `Seattle_Collisions_Main.ipynb` in Jupyter and run all cells. This will:
 - Load and clean the collision data
 - Compute severity scores
