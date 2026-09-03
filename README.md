@@ -30,17 +30,17 @@ Rather than ranking intersections by raw collision count alone, the project engi
 
 ## Project Structure
 
-\```
+```
 seattle-traffic-optimization/
 ├── data/
-│   └── SDOT_Collisions_All_Years.csv_1.xz   # Compressed source dataset
+│   └── SDOT_Collisions_All_Years.csv_1.xz  # Compressed source dataset
 ├── notebooks/
-│   └── Seattle_Collisions_Main.ipynb                          # Main analysis and optimization pipeline
+│   └── Seattle_Collisions_Main.ipynb       # Main analysis and optimization pipeline
 ├── most_severe_collisions_map.html         # Generated interactive map (output)
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-\```
+```
 
 ## Data Source
 
@@ -49,15 +49,15 @@ Collision records are sourced from the [Seattle Department of Transportation (SD
 ## Setup
 
 **1. Clone the repository**
-\```bash
+```bash
 git clone https://github.com/owen-kimball/seattle-traffic-optimization.git
 cd seattle-traffic-optimization
-\```
+```
 
 **2. Install dependencies**
-\```bash
+```bash
 pip install -r requirements.txt
-\```
+```
 
 **3. Run the notebook**
 Open `Seattle_Collisions_Main.ipynb` in Jupyter and run all cells. This will:
