@@ -98,6 +98,10 @@ The pipeline produces two ranked tables:
 - Add a cost dimension per intersection for a true budget-constrained optimization
 - Compare optimized selections against actual city infrastructure investment records
 
+## License
+
+This project is licensed under the MIT License.
+
 ## Author
 
 Owen Kimball
